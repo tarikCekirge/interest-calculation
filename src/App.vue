@@ -1,5 +1,16 @@
-<script setup></script>
+<script setup>
+import LayoutView from "@/layouts/LayoutView.vue";
+import ThemeSwitch from "@/components/ThemeSwitch.vue";
+</script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <div class="app">
+    <ThemeSwitch />
+    <LayoutView />
+  </div>
 </template>
+<style scoped>
+.app {
+  @apply w-full h-screen flex flex-col items-center justify-center;
+}
+</style>
